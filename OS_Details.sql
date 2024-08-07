@@ -10,12 +10,11 @@ sample scripts or documentation, even if Microsoft has been advised of the possi
 */
 
 SELECT [ResourceID]
-      ,[Netbios_Name0]
-      ,[Full_Domain_Name0]
-      ,[Operating_System_Name_and0]
-      ,[BuildExt]
-      ,[Active0]
-      ,[Client0]
+      ,[Netbios_Name0] as 'Name'
+      ,[Operating_System_Name_and0] as 'OS'
+      ,[BuildExt] as 'Build'
+      ,[Active0] as 'Active'
+      ,[Client0] as 'Client'
   FROM [CM_PS1].[dbo].[v_R_System]
 Where [Active0] = 1
 and   [Client0] = 1
