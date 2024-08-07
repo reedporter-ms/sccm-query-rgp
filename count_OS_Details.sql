@@ -9,9 +9,9 @@ business interruption, loss of business information, or other pecuniary loss) ar
 sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages. 
 */
 
-Select Count (*) as 'Count'
- 
-      ,BuildExt as 'Version'
+Select Count (*) as 'Count' 
+      ,BuildExt as 'Build'
+      ,[Operating_System_Name_and0] as 'OS'
 
 FROM [CM_PS1].[dbo].[v_R_System]
 Where  Active0 = 1
