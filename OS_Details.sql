@@ -18,5 +18,5 @@ SELECT [ResourceID]
   FROM [CM_PS1].[dbo].[v_R_System]
 Where [Active0] = 1
 and   [Client0] = 1
-and   [Operating_System_Name_and0] is like '%Server%
+and   [Operating_System_Name_and0]  like '%Server%'
 Order By [BuildExt]
